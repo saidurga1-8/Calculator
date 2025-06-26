@@ -1,0 +1,81 @@
+body{
+    font-family: open Sans;
+    background-color: #def0ff;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.calculator{
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0, 0,0.1);
+    width: 360px;
+}
+
+#display{
+    width: 100%;
+    padding: 2px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: right;
+    border: none;
+    background-color: #94aec3;
+    box-shadow: 0 0 3px #ccc;
+    color: #fff
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+button{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #ccc;
+}
+
+#history-list{
+    list-style: none;
+    padding-left: 0;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#history-list li{
+    font-family: open Sans;
+    background-color: #8393a0;
+    margin-bottom: 6px;
+    padding: 8px 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #94aec3;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #e4d4d4;
+    transition: background-color 0.3s;
+}
+
+#history-list li:hover{
+     background-color: #61ace9;
+}
+
+#history-list li button{
+    background: none;
+    color: red;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
